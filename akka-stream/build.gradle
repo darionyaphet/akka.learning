@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+    id 'scala'
+}
+
+group 'org.darion.yaphet'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/com.typesafe.akka/akka-stream
+    compile group: 'com.typesafe.akka', name: 'akka-stream_2.12', version: '2.5.13'
+
+    // https://mvnrepository.com/artifact/com.typesafe.akka/akka-stream-testkit
+    testCompile group: 'com.typesafe.akka', name: 'akka-stream-testkit_2.12', version: '2.5.13'
+
+    // https://mvnrepository.com/artifact/com.typesafe.play/play-json
+    compile group: 'com.typesafe.play', name: 'play-json_2.12', version: '2.6.10'
+
+    // https://mvnrepository.com/artifact/com.pubnub/pubnub
+    compile group: 'com.pubnub', name: 'pubnub', version: '3.5.6'
+}

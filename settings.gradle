@@ -1,0 +1,9 @@
+rootProject.name = 'akka.learning'
+include 'akka-basic'
+include 'akka-remote'
+include 'akka-stream'
+include 'akka-http'
+include 'akka-persistence'
+include 'akka-cluster'
+include 'cluster-sharding'
+

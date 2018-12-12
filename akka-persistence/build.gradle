@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+    id 'scala'
+}
+
+group 'org.darion.yaphet'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/com.typesafe.akka/akka-persistence
+    compile group: 'com.typesafe.akka', name: 'akka-persistence_2.12', version: '2.5.13'
+
+    // https://mvnrepository.com/artifact/com.typesafe.akka/akka-persistence-query
+    compile group: 'com.typesafe.akka', name: 'akka-persistence-query_2.12', version: '2.5.13'
+
+}

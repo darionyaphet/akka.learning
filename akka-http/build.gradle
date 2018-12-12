@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+    id 'scala'
+}
+
+group 'org.darion.yaphet'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/com.typesafe.akka/akka-http
+    compile group: 'com.typesafe.akka', name: 'akka-http_2.12', version: '10.1.3'
+}
